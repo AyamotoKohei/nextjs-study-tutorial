@@ -7,7 +7,13 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>トップページ</title>
+        <title>{products[0].name}</title>
+        <meta name="description" content={`${products[0].name}のページ`} />
+        <meta property="og:title" content={products[0].name} />
+        <meta
+          property="og:description"
+          content={`${products[0].name}のページ`}
+        />
       </Head>
       <ul>
         {products.map((products) => {
