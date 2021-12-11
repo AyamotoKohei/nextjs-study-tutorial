@@ -19,10 +19,10 @@ const index = ({ posts }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   const posts = await res.json();
-  console.log(posts);
+
   return { props: { posts } };
 }
 
