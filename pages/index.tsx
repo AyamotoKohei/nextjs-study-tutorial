@@ -1,10 +1,14 @@
 import Link from "next/link";
+import Head from "next/head";
 
 const products = [{ name: "bag" }, { name: "shoes" }, { name: "socks" }];
 
 const Home = () => {
   return (
     <div>
+      <Head>
+        <title>トップページ</title>
+      </Head>
       <ul>
         {products.map((products) => {
           return (
