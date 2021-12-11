@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Sites Used for Learning
+https://reffect.co.jp/react/next-js#Nextjs
+
+## Study Period
+Dec 9, 2021 ~ Dec 11, 2021
+
 ## Getting Started
 
 First, run the development server:
