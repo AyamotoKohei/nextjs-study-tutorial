@@ -21,4 +21,14 @@ export async function getStaticProps({ params }) {
   return { props: { post } };
 }
 
+export async function getStaticPaths() {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+  const posts = await res.json();
+  const paths = posts.map((post) => `/posts/${post.id}`);
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
 export default post;
